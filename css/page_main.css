@@ -1,0 +1,27 @@
+/*
+    This is the additional main CSS file for every page(Exluding index.html).
+    It's used for styling Header and Menu elements on single pages.
+*/
+
+/* ------------- HEADER(menu + page title) ------------- */
+.malto-head {
+    background: url("../img/elements-page-bg.png") top;
+    min-height: 40vh;
+}
+
+.head-elements {
+    color: white;
+    margin-top: 14vh;
+}
+
+.head-elements h1 {
+    font-size: 40px;
+}
+
+.head-elements p {
+    font-family: "RalewayLight";
+    letter-spacing: 1px;
+    padding: 0px 150px;
+    font-size: 12px;
+    line-height: 20px;
+}

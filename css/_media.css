@@ -1,0 +1,389 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+	/* ------------- HEADER ------------- */
+	.head-bar img {
+		width: 75%;
+	}
+	.menu-element {
+		display: block;
+		margin: 0;
+		padding: 15px 0px;
+	}
+
+	.menu-element a {
+		padding: 15px 120px 15px 50px;
+	}
+
+	/* ------------- CONTACTS ------------- */
+	.icon-wrap {
+		width: 33px;
+		height: 33px;
+	}
+
+	.contact-items i {
+		font-size: 16px;
+		margin-top: 8px;
+	}
+
+	.contact-items span {
+		font-size: 13px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+	/* ------------- HEADER ------------- */
+	.head-bar img {
+		width: 95%;
+	}
+
+
+	/* ------------- FEATURES ------------- */
+	.item-descr {
+		margin-bottom: 30px;
+	}
+
+	/* ------------- PARTNERS ------------- */
+	#partners img {
+		width: 70%;
+		height: auto;
+	}
+
+	/* ------------- CONTACTS ------------- */
+	.contact-items .item {
+		margin-top: 20px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	section {
+		padding: 25px 0px;
+	}
+
+	/* ------------- HEADER ------------- */
+	.head-bar img {
+		width: 105%;
+	}
+
+	/* ------------- FEATURES(ITEMS) ------------- */
+	.item-descr {
+		padding: 0px 40px;
+		margin-bottom: 40px;
+	}
+
+	/* ------------- SERVICES(TABS) ------------- */
+	.tab-title {
+		margin-top: 40px;
+	}
+
+	.tab-title span {
+		font-size: 14px;
+	}
+
+	.tab-descr p,
+	.tab-features li {
+		font-size: 13px;
+	}
+
+	/* ------------- STATS ------------- */
+	#stats {
+		padding-top: 45px;
+	}
+
+	#stats i {
+		margin-top: 30px;
+	}
+
+	#stats p {
+		margin-top: 0px;
+	}
+
+
+	/* ------------- REVIEWS(SLIDER) ------------- */
+	.review {
+		padding: 0px 30px;
+	}
+
+	.review span {
+		font-size: 15px;
+	}
+
+	.review i {
+		font-size: 14px;
+	}
+
+	.review p {
+		font-size: 13px;
+	}
+
+	/* ------------- PARTNERS ------------- */
+	#partners img {
+		width: 50%;
+		height: auto;
+	}
+
+	#partners img:hover {
+		opacity: 0.5;
+	}
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Custom */
+@media only screen and (max-width : 700px) {
+	/* ------------- HEADER ------------- */
+	.head-bar img {
+		width: 130%;
+	}
+
+	/* ------------- CONTACTS ------------- */
+	.icon-wrap {
+		width: 33px;
+		height: 33px;
+	}
+
+	.contact-items i {
+		font-size: 16px;
+		margin-top: 8px;
+	}
+
+	.contact-items span {
+		font-size: 12px;
+	}
+
+	*::-webkit-input-placeholder {
+		font-family: "RalewayRegular", sans-serif;
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+	*:-moz-placeholder {
+		font-family: "RalewayRegular", sans-serif;
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+	*::-moz-placeholder {
+		font-family: "RalewayRegular", sans-serif;
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+	*:-ms-input-placeholder {
+		font-family: "RalewayRegular", sans-serif;
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+
+	.contact-items input,
+	.contact-items textarea {
+		font-size: 12px;
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.head-elements {
+		text-transform: uppercase;
+	}
+
+	#form-btn {
+		width: 130px;
+		padding: 13px 0px;
+		font-size: 9px;
+	}
+
+	/* ------------- HEADER ------------- */
+	.head-bar img {
+		width: 200%;
+	}
+
+	/* ------------- FEATURES(ITEMS) ------------- */
+	#features {
+		padding: 40px 0px;
+	}
+
+	#features img {
+		width: 12%;
+		height:auto;
+	}
+
+	.item-descr {
+		padding: 0px 0px;
+		font-size: 11px;
+	}
+
+	/* ------------- SERVICES(TABS) ------------- */
+	#services .malto-btn {
+		margin-top: 10px;
+	}
+
+	.tab-content {
+		text-align: left;
+	}
+
+	.tab-title {
+		margin-top: 30px;
+	}
+
+	.tab-title span {
+		font-size: 14px;
+	}
+
+	.tab-descr p,
+	.tab-descr li {
+		font-size: 12px;
+	}
+
+	.tab-descr li {
+		padding: 12px 0px;
+	}
+
+	.tab-features {
+		list-style-image: none;
+	}
+
+	/* ------------- STATS ------------- */
+	#stats i {
+		font-size: 36px;
+	}
+
+	#stats span {
+		font-size: 28px;
+	}
+
+	#stats p {
+		font-size: 12px;
+	}
+
+	/* ------------- TEAM(CARDS) ------------- */
+	.owl-wrapper-outer {
+		padding-bottom: 0px;
+	}
+
+	/* ------------- REVIEWS(SLIDER) ------------- */
+	.review {
+		padding: 0px 0px;
+	}
+
+	/* ------------- PARTNERS ------------- */
+	#partners img {
+		width: 70%;
+		height: auto;
+	}
+
+	/* ------------- CONTACTS ------------- */
+	#contacts {
+		padding: 30px 0px;
+	}
+
+	.contact-items {
+		margin-top: 0px;
+	}
+
+	/* ------------- FOOTER ------------- */
+	.first-level {
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+
+}
+
+/* Custom, iPhone 6 */
+@media only screen and (max-width : 375px) {
+
+	#form-btn {
+		width: 110px;
+		padding: 11px 0px;
+		font-size: 8px;
+	}
+
+	/* ------------- HEADER ------------- */
+	.head-bar img {
+		width: 300%;
+	}
+
+	/* ------------- SERVICES(TABS) ------------- */
+
+	.tab-title span {
+		font-size: 12px;
+	}
+
+	.tab-descr p,
+	.tab-descr li {
+		font-size: 10px;
+	}
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+	/* ------------- SERVICES(TABS) ------------- */
+	.tab-title span {
+		font-size: 12px;
+	}
+
+	.tab-descr p,
+	.tab-descr li {
+		font-size: 10px;
+	}
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

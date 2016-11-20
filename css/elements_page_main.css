@@ -1,0 +1,493 @@
+/*
+    This is the main CSS file for elements_page.html.
+    It's used for styling elements exluding Header and Menu+.
+*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+* body
+	+ Header / .malto-head
+		- Menu / .menu
+		- Title / .head-elements
+	+ Video / #video
+	+ Buttons / #buttons-sec
+	+ Accordion / #accordion sec
+	+ Social links / #social-links-sec
+	+ Small cards / #small-card-sec
+	+ Big cards / #big-card-sec
+	+ Tabs / #tabs-sec
+	+ Headings / #headings-sec
+	+ Footer / .malto-foot
+		- First level / .first-level
+		- Second level / .second-level
+-------------------------------------------------------------------*/
+
+/* ------------- VIDEO(section) ------------- */
+#video {
+	padding: 40px 0px;
+}
+
+#video iframe {
+	border-radius: 5px;
+}
+
+#video p {
+	font-size: 15px;
+	margin-top: 10px;
+	color: #575757;
+}
+
+.google-btn {
+	margin-left: 5px;
+}
+
+.download-btns {
+	margin-top: 20px;
+}
+
+/* Responsivnes */
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	border: none;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+/* ------------- MALTO BUTTONS(element) ------------- */
+#buttons-sec {
+	text-align: center;
+}
+
+.malto-btn a {
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "RalewayBold", sans-serif;
+	display: inline-block;
+	width: 175px;
+	color: #337ab7;
+	padding: 15px 0px;
+}
+
+.malto-btn a:hover,
+.malto-btn a:visited,
+.malto-btn a:focus,
+.malto-btn a:active {
+	text-decoration: none;
+	color: #337ab7;
+}
+
+.malto-btn {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	text-align: center;
+	color: #122a2d;
+	background-color: #e3f2fd;
+	display: inline-block;
+}
+
+.malto-btn,
+.btn-flat {
+	text-transform: uppercase;
+	font-family: "RalewayBold", sans-serif;
+	font-size: 13px;
+	letter-spacing: 1px;
+	border: 0;
+	outline: none;
+	border-radius: 3px;
+}
+
+.btn-flat {
+	color: #309df4;
+	background-color: #fff;
+	box-shadow: none;
+}
+
+.btn-flat:hover {
+	color: #309df4;
+	background-color: #f5f5f5;
+	transition: 0.4s;
+	background-color: #f2f2f2;
+}
+
+.accent a:hover,
+.accent a:visited,
+.accent a:focus,
+.accent a:active {
+	color: #fff;
+}
+
+.accent {
+	background-color: #2196f3;
+}
+
+.accent a {
+	color: #ffffff;
+}
+
+.accent a:hover {
+	color: #ffffff;
+}
+
+/* ------------- MALTO ACCORDION(element) ------------- */
+.panel {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.panel-default {
+    border: none;
+}
+
+.panel-group .panel+.panel {
+    margin-top: 9px;
+}
+
+.panel-default>.panel-heading {
+    /*background-color: #309df4;*/
+    background-color: #f9f9f9;
+    padding: 0;
+}
+
+.panel-heading a {
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: "RalewaySemiBold";
+    color: #686868;
+    display: block;
+    padding: 15px 20px;
+}
+
+.panel-collapse .panel-body {
+    color: #6a6a6a;
+}
+
+.panel-heading a:after {
+    font-family: "FontAwesome";
+    content: '\f068';
+    color: #309df4;
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+}
+
+.panel-heading a.collapsed:after {
+    font-family: "FontAwesome";
+    content: "\f067";
+    color: #309df4;
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+}
+
+/* ------------- MALTO SOCIAL LINKS(element) ------------- */
+#social-links-sec > div {
+	text-align: center;
+}
+
+#social-links-sec .light-social-links {
+	margin-left: 20px;
+}
+
+#social-links-sec p {
+	font-size: 12px;
+	font-family: "RalewayRegular";
+	margin-top: 3px;
+}
+
+/* Common settings for links */
+.light-social-links i,
+.dark-social-links i {
+	color: #8b8b8b;
+	width: 37px;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.light-social-links i:hover,
+.dark-social-links i:hover {
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.light-social-links a,
+.light-social-links a:hover,
+.dark-social-links a,
+.dark-social-links a:hover {
+	text-decoration: none;
+}
+
+/* Light links */
+.light-social-links i:hover {
+	background-color: #e4e4e4;
+}
+
+/* Dark links */
+.dark-social-links i:hover {
+	background-color: #192e4f;
+}
+
+/* ------------- MALTO BIG CARDS(element) ------------- */
+.big-card {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	text-align: center;
+	background-color: #fff;
+	border-radius: 3px;
+	padding-bottom: 20px;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.big-card:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.big-card-title,
+.big-card-title-accent {
+	padding: 25px;
+	border-radius: 4px 4px 0px 0px;
+	background-color: #f2f2f2;
+	margin-bottom: 13px;
+}
+
+.big-card-title-accent {
+	background-color: #309df4;
+}
+
+.big-card-title-accent span,
+.big-card-title-accent p {
+	color: #fff;
+}
+
+.big-card-title span,
+.big-card-title-accent span {
+	font-size: 36px;
+	font-family: "HelveticaThin", sans-serif;
+	color: #343434;
+}
+
+.big-card-title p,
+.big-card-title-accent p {
+	font-size: 14px;
+	font-family: "RalewayLight", sans-serif;
+	color: #ababab;
+	margin: 0;
+	margin-top: 2px;
+	letter-spacing: 0.5px;
+}
+
+.big-card-title-accent p {
+	color: #fff;
+}
+
+.big-card-title-accent span {
+	color: #fff;
+}
+
+.big-card-content ul {
+	list-style-position: inside;
+	padding: 0;
+	list-style-image: url('../img/marker-basic.png');
+}
+
+.big-card-content li {
+	color: #646363;
+	font-size: 15px;
+	font-family: "RalewayLight", sans-serif;
+	padding: 13px 0px;
+}
+
+.big-card-content .plus-including {
+	list-style-image: url('../img/marker-plus.png');
+	font-family: "RalewaySemiBold";
+	background-color: rgba(243, 243, 243, 0.5);
+	font-size: 14px;
+	color: #828282;
+}
+
+.big-card-content .accent-including {
+	background-color: rgba(48, 157, 244, 0.1);
+}
+
+.big-card-divider {
+	width: 93%;
+	color: #f2f2f2;
+	background-color: #f2f2f2;
+	text-align: center;
+}
+
+/* ------------- MALTO SMALL CARDS(element) ------------- */
+.small-card {
+	border-radius: 3px;
+	text-align: center;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	padding-bottom: 15px;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	position: relative;
+}
+
+.small-card:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.small-card-img img {
+	width: 100%;
+	height: auto;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.small-card-info {
+	padding: 0px 20px;
+}
+
+.small-card-info span {
+	color: #787878;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: "RalewaySemiBold", sans-serif;
+	display: block;
+	margin-top: 26px;
+}
+
+.small-card-info i {
+	font-size: 16px;
+	font-family: "RalewayRegular", sans-serif;
+	margin-top: 10px;
+	display: block;
+	color: #1976d2;
+}
+
+.small-card-info p {
+	font-size: 15px;
+	font-family: "RalewayLight", sans-serif;
+	color: #707070;
+	margin-bottom: 10px;
+}
+
+.middle-icon,
+.last-icon {
+	margin-left: 5px;
+}
+
+/* ------------- MALTO TABS(element) ------------- */
+.nav-tabs {
+	border-bottom: 0;
+	text-align: center;
+	margin: 0;
+}
+
+.nav-tabs > li {
+	float: none;
+	display: inline-block;
+	border: 0;
+}
+
+.nav-tabs > li > a {
+	margin: 0;
+	margin-right: -5px;
+	width: 190px;
+	padding: 20px 0px;
+	border-radius: 0;
+	color: #c1c1c1;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: "RalewayBold", sans-serif;
+	letter-spacing: 1px;
+	border-top: 2px solid #E7E7E7;
+	border-bottom: 2px solid #E7E7E7;
+}
+
+.first-tab {
+	border-radius: 3px 0px 0px 3px !important;
+	border-right: 2px solid #E7E7E7 !important;
+	border-left: 2px solid #E7E7E7 !important;
+}
+
+.last-tab {
+	border-radius: 0px 3px 3px 0px !important;
+	border-left: 2px solid #E7E7E7 !important;
+	border-right: 2px solid #E7E7E7 !important;
+}
+
+.tabs .active > a {
+	border-top: 2px solid #E7E7E7 !important;
+	border-bottom: 2px solid #2196f3 !important;
+	color: #2196f3 !important;
+	transition: all 0.2s;
+}
+
+/* ------------- MALTO HEADINGS(elements)------------- */
+h1 {
+	font-family: "RalewayLight", sans-serif;
+	font-size: 48px;
+	color: white;
+	letter-spacing: 3px;
+	margin: 0;
+	margin-bottom: 30px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+	font-family: "RalewayLight", sans-serif;
+	font-size: 18px;
+	color: white;
+	letter-spacing: 1px;
+	margin: 0;
+	line-height: 17px;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+	font-family: "RalewayBold", sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #2c2c2c;
+	letter-spacing: 1px;
+}
+
+h4 {
+	font-family: "RalewayLight", sans-serif;
+	font-size: 36px;
+	color: #2c2c2c;
+	letter-spacing: 1px;
+	margin: 0;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#headings-sec {
+	text-align: center;
+}
+
+#headings-sec h1 {
+	color: #2c2c2c;
+}
+
+#headings-sec h2 {
+	color: #2c2c2c;
+}

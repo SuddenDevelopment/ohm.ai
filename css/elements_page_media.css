@@ -1,0 +1,340 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+    /* ------------- MALTO BUTTONS(material) ------------- */
+    .malto-btn a,
+	.malto-btn-flat a,
+	#form-btn {
+		font-size: 11px;
+	}
+
+    /* ------------- MALTO BIG CARDS ------------- */
+    .big-card-title span,
+    .big-card-title-accent span {
+        font-size: 32px;
+    }
+
+    .big-card-title p,
+    .big-card-title-accent p {
+        font-size: 12px;
+    }
+
+    .big-card-content li{
+        font-size: 13px;
+    }
+
+    .big-card-content .plus-including {
+        font-size: 12px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+    /* ------------- MALTO BIG CARDS ------------- */
+    .big-card {
+        margin: 50px 100px;
+    }
+
+    .big-card-card:hover {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    /* ------------- MALTO SMALL CARDS ------------- */
+    #small-card-sec {
+        padding: 0px 30px;
+    }
+
+    #small-card-sec .small-card {
+        margin-top: 30px;
+    }
+
+    #small-card-sec .first-card {
+        margin-top: 0px;
+    }
+
+    /* ------------- MALTO HEADINGS ------------- */
+    h1 {
+		font-size: 40px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    /* ------------- VIDEO ------------- */
+    .download-btns img {
+        width: 150px;
+    }
+
+    #video p {
+        font-size: 14px;
+    }
+
+    /* ------------- MALTO BUTTONS(material) ------------- */
+    .malto-btn a,
+	.malto-btn-flat a,
+	#form-btn {
+		width: 150px;
+		padding: 12px 0px;
+		font-size: 11px;
+	}
+
+    /* ------------- MALTO SOCIAL LINKS ------------- */
+    .light-social-links {
+        font-size: 16px;
+    }
+
+    /* ------------- MALTO BIG CARDS ------------- */
+	.big-card {
+		margin: 50px 40px;
+	}
+
+    /* ------------- MALTO SMALL CARDS ------------- */
+
+    .small-card {
+		margin: 0px 20px;
+	}
+
+	.small-card-info span {
+		font-size: 16px;
+	}
+
+	.small-card-info i {
+		font-size: 14px;
+	}
+
+	.small-card-info p {
+		font-size: 13px;
+	}
+
+    /* ------------- MALTO TABS ------------- */
+    .nav-tabs > li > a {
+        padding: 18px;
+        width: 145px;
+        font-size: 11px;
+    }
+
+    /* ------------- MALTO HEADINGS ------------- */
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+}
+
+/* Custom */
+@media only screen and (max-width : 700px) {
+
+    /* ------------- MALTO ACCORDION(material) ------------- */
+    .panel-group-title {
+        font-size: 15px;
+    }
+
+    .panel-heading a {
+        font-size: 12px;
+    }
+
+    .panel-heading a:after {
+        content: '';
+    }
+
+    .panel-heading a.collapsed:after {
+        content: '';
+    }
+
+    .panel-body {
+        font-size: 11px;
+    }
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    .head-elements p {
+        font-size: 10px;
+        text-transform: none;
+    }
+
+    /* ------------- VIDEO ------------- */
+    .download-btns img {
+        width: 130px;
+    }
+
+    #video p {
+        font-size: 12px;
+    }
+
+    /* ------------- MALTO BUTTONS(material) ------------- */
+    .malto-btn a,
+	.malto-btn-flat a {
+		width: 130px;
+		padding: 13px 0px;
+		font-size: 9px;
+	}
+
+    /* ------------- MALTO BIG CARDS ------------- */
+    .big-card {
+        margin: 30px 0px;
+    }
+
+    .big-card-content li {
+        list-style-image: none;
+    }
+
+    .big-card-content .plus-including {
+        list-style-image: none;
+    }
+
+    #small-card-sec {
+        padding: 0px 0px;
+    }
+
+    /* Disabling shadow animations on mobile versions */
+    .big-card:hover {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    /* ------------- MALTO SMALL CARDS ------------- */
+    .small-card {
+		margin: 0px 20px;
+		margin-bottom: 5px;
+	}
+
+	/* Disabling shadow animations on mobile versions */
+	.small-card:hover {
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	}
+
+    /* ------------- MALTO TABS ------------- */
+    .nav-tabs > li > a {
+        padding: 15px 0px;
+        width: 113px;
+        font-size: 10px;
+    }
+
+    /* ------------- MALTO HEADINGS ------------- */
+    h1 {
+        font-size: 16px;
+        font-family: "RalewayRegular";
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+}
+
+/* Custom, iPhone 6 */
+@media only screen and (max-width : 375px) {
+
+    /* ------------- VIDEO ------------- */
+    .download-btns img {
+        width: 110px;
+    }
+
+    #video p {
+        font-size: 10px;
+    }
+
+    /* ------------- MALTO BUTTONS(material) ------------- */
+
+    .malto-btn a,
+	.malto-btn-flat a {
+		width: 110px;
+		padding: 11px 0px;
+		font-size: 8px;
+	}
+
+    /* ------------- MALTO BIG CARDS ------------- */
+    .big-card-title span,
+    .big-card-title-accent span {
+        font-size: 28px;
+    }
+
+    .big-card-title p,
+    .big-card-title-accent p {
+        font-size: 11px;
+    }
+
+    /* ------------- MALTO TABS ------------- */
+    .nav-tabs {
+		margin-top: 25px;
+	}
+
+	.nav-tabs > li > a {
+		padding: 15px 0px;
+		width: 108px;
+		font-size: 8px;
+	}
+
+    /* ------------- MALTO HEADINGS ------------- */
+    h1 {
+        font-size: 15px;
+        font-family: "RalewayRegular";
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+    /* ------------- MALTO BIG CARDS ------------- */
+    .big-card-content li {
+        font-size: 12px;
+    }
+
+    .big-card-content .plus-including {
+        font-size: 12px;
+    }
+
+    /* ------------- MALTO TABS ------------- */
+    .nav-tabs > li > a {
+        width: 96px;
+        font-size: 8px;
+    }
+
+    /* ------------- MALTO HEADINGS ------------- */
+    h1 {
+        font-size: 12px;
+        font-family: "RalewayRegular";
+    }
+    h2 {
+        font-size: 8px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+
+}

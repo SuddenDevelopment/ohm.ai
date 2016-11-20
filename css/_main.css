@@ -1,0 +1,601 @@
+/*------------------------------------------------------------------
+[Project details]
+
+Project:	Malto - Material design App Showcase
+Version:	1.2
+Last change:	9/8/2016
+
+[Table of contents]
+* body
+	+ Header / .malto-head
+		- Menu / .menu
+		- Title and buttons / .head-elements
+	+ Mobile menu / .mobile-menu
+	+ Features section / #features
+	+ Services section / #services
+		- Tabs / .tabs
+		- Tabs content / .tab-content
+	+ Stats section / #stats
+	+ Prices section / #prices
+	+ Team section / #team
+	+ Reviews section / #reviews
+	+ Partners section / #partners
+	+ Contacts section / #contacts
+		- Contact items / .contact-items
+		- Form / .malto-form
+	+ Footer / .malto-foot
+		- First level / .first-level
+		- Second level / .second-level
+-------------------------------------------------------------------*/
+
+
+/* Common Settings */
+
+*::-webkit-input-placeholder {
+	font-family: "RalewayRegular", sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+*:-moz-placeholder {
+	font-family: "RalewayRegular", sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+*::-moz-placeholder {
+	font-family: "RalewayRegular", sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+*:-ms-input-placeholder {
+	font-family: "RalewayRegular", sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+
+body {
+	position: relative;
+}
+
+.preloader {
+	width: 100%;
+	height: 100%;
+	z-index: 1200;
+	position: fixed;
+	background: #E3ECFD url("../img/preloader.gif") center no-repeat;
+	top: 0;
+	left: 0;
+}
+
+section {
+	padding: 40px 0px;
+}
+
+ul {
+	margin: 0;
+}
+
+.nav-tabs .waves-effect .waves-ripple,
+.price-content .waves-effect .waves-ripple
+{
+	background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.3) 90%) !important;
+    background: -o-radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.3) 90%) !important;
+    background: -moz-radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.3) 90%) !important;
+    background: radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.3) 90%) !important;
+}
+
+/* Slider pagination settings */
+.owl-pagination .active span {
+	background-color: #309df4 !important;
+	border: 2px solid #309df4 !important;
+}
+
+.owl-page span {
+	border: 2px solid #838383 !important;
+	background-color: transparent !important;
+}
+
+/* ------------- HEADER ------------- */
+.malto-head {
+	position: relative;
+	background:
+		linear-gradient(rgba(18, 31, 42, 0.9), rgba(18, 31, 42, 0.9)),
+		url("../img/screen-demo.png"),
+		no-repeat center;
+	min-height: 100vh;
+
+	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head-bar {
+	position: fixed;
+	width: 100%;
+	display: inline;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	z-index: 200;
+	outline-offset: 0px;
+	border: none;
+    outline: 0px;
+}
+
+/* For EXPLORER and EDGE browsers */
+.empty {
+	min-height: 1px;
+}
+
+.head-bar img {
+	width: 60%;
+	height: auto;
+	margin-top: 20px;
+	outline-offset: 0px;
+	border: none;
+    outline: 0px;
+}
+
+.menu {
+	text-align: right;
+}
+
+.menu ul {
+	margin: 8px 0px;
+	padding-left: 0;
+}
+
+.malto-head i {
+	color: #9eb0c0;
+	margin-top: 20px;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.txt-shade{ text-shadow:0px 0px 5px black; }
+
+.menu-element {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: "RalewayBold", sans-serif;
+	margin-left: 30px;
+	letter-spacing: 1px;
+	margin-top: 20px;
+}
+
+.menu-accent {
+	font-size: 13px;
+}
+
+.menu-element a {
+	text-decoration: none;
+	color: #9eb0c0;
+}
+
+.menu-accent a {
+	color: #dbe8f1;
+}
+
+/* Minimalized menu */
+.minimalized {
+	padding-bottom: 18px;
+	background-color: #31353e;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	z-index: 200;
+}
+
+/* Mobile menu */
+.mobile-menu {
+	position: fixed;
+	background-color: #31353e;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.23);
+	top: 0px;
+	right: 0;
+	height: 100%;
+	display: none;
+	z-index: 1;
+}
+
+.mobile-menu .menu-element {
+	font-size: 11px;
+}
+
+.mobile-menu .menu-accent a {
+	color: #dbe8f1;
+}
+
+.mobile-menu ul {
+	padding: 0;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+/* Title + buttons */
+.head-elements {
+	text-align: center;
+	margin-top: 40vh;
+	z-index: 200;
+}
+
+.malto-head .accent {
+	margin-top: 45px;
+	margin-left: 30px;
+}
+
+/* ------------- FEATURES(ITEMS) ------------- */
+#features {
+	text-align: center;
+	padding: 85px 0px;
+}
+
+#features i {
+	font-size: 40px;
+	color: #2196f3;
+}
+
+#features p {
+	color: #575757;
+}
+
+.item-descr {
+	font-size: 13px;
+}
+
+/* ------------- SERVICES(TABS) ------------- */
+#services {
+	background-color: #f7f7f7;
+	padding-bottom: 50px;
+}
+
+/* Tabs content */
+.tab-descr {
+	text-align: left;
+}
+
+.tab-title {
+	margin-top: 70px
+}
+
+.tab-title span {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: "RalewayBold", sans-serif;
+	letter-spacing: 1px;
+	margin: 0;
+	color: #575757;
+}
+
+.tab-divider {
+	height: 4px;
+	color: #ececec;
+	background: #ececec;
+	font-size: 0;
+    border: 0;
+	margin: 0;
+	margin-top: 15px;
+	margin-bottom: 22px;
+	width: 28%;
+	text-align: left;
+}
+
+.tab-descr p,
+.tab-features li {
+	font-size: 14px;
+	color: #575757;
+	font-family: "RalewayLight", sans-serif;
+	letter-spacing: 0.5px;
+}
+
+.tab-descr p {
+	margin: 0;
+}
+
+.tab-features {
+	list-style-image: url('../img/ul.png');
+}
+
+.tab-features li {
+	margin: 0;
+	padding: 15px 0px;
+}
+
+.tab-descr .malto-btn {
+	margin-left: 0px;
+	margin-top: 30px;
+	color: #ffffff;
+	background-color: #2196f3;
+}
+
+.iphone-img {
+	text-align: right;
+	padding-top: 40px;
+}
+
+.iphone-img img {
+	height: 560px;
+	width: auto;
+}
+
+/* ------------- STATS ------------- */
+#stats {
+	background:
+		linear-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23)),
+		url("../img/stats-parallax.png"),
+		center;
+	padding: 75px 0px;
+	text-align: center;
+	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stats i {
+	color: #8c8f96;
+	font-size: 38px;
+	margin-right: 5px;
+}
+
+#stats span {
+	color: #309df4;
+	font-size: 32px;
+	font-family: "HelveticaBold", sans-serif;
+	letter-spacing: 0.5px;
+}
+
+#stats p {
+	margin: 0;
+	margin-top: 15px;
+	font-size: 14px;
+	color: white;
+	font-family: "RalewayRegular", sans-serif;
+	letter-spacing: 0.5px;
+}
+
+/* ------------- TEAM(CARDS) ------------- */
+#team {
+	background-color: #f7f7f7;
+}
+
+.owl-item {
+	margin-bottom: 10px;
+}
+
+.owl-wrapper-outer {
+	padding-bottom: 30px;
+}
+
+/* ------------- REVIEWS(SLIDER) ------------- */
+#reviews {
+	position: relative;
+	background:
+		linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+		url("../img/review-bg.jpg");
+	padding: 40px 0px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#reviews h4 {
+	color: #fff;
+	letter-spacing: 1.5px;
+}
+
+.review {
+	text-align: center;
+	padding: 0px 100px;
+}
+
+.review img {
+	border-radius: 180px;
+	width: 135px;
+	height: 135px;
+}
+
+.review span {
+	display: block;
+	font-size: 17px;
+	font-family: "RalewaySemiBold", sans-serif;
+	letter-spacing: 2px;
+	color: #e9e9e9;
+	margin-top: 10px;
+}
+
+.review i {
+	display: block;
+	font-size: 16px;
+	color: #309df4;
+	letter-spacing: 0.5px;
+	margin-top: 10px;
+}
+
+.review p {
+	font-size: 15px;
+	color: #e9e9e9;
+	font-family: "RalewayLight", sans-serif;
+	margin-top: 20px;
+}
+
+/* ------------- PARTNERS ------------- */
+#partners {
+	background-color: #f8f8f8;
+	padding: 50px 0px;
+	text-align: center;
+}
+
+#partners img {
+	opacity: 0.5;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+#partners img:hover {
+	opacity: 1;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#partners .owl-wrapper-outer {
+	padding: 0;
+}
+
+#partners .owl-pagination {
+	display: none;
+}
+
+#partners .owl-item {
+	margin-bottom: 0;
+}
+
+/* ------------- CONTACTS ------------- */
+#form-btn {
+	margin-top: 40px;
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "RalewayBold", sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	width: 175px;
+	padding: 15px 0px;
+	color: #337ab7;
+	color: #fff;
+}
+
+#contacts {
+	padding: 50px 0px;
+}
+
+.contact-items {
+	text-align: left;
+}
+
+.icon-wrap {
+	background-color: #fff;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50%;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.35);
+	margin-right: 10px;
+}
+
+.contact-items i {
+	color: #309df4;
+	font-size: 18px;
+	margin-top: 9px;
+	margin-left: 1px;
+}
+
+.contact-items span {
+	font-size: 15px;
+	color: #8f8f8f;
+	display: inline-block;
+	font-family: "HelveticaLight", sans-serif;
+	letter-spacing: 0.5px;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	vertical-align:middle;
+}
+
+.malto-form input,
+.malto-form textarea {
+	border: none;
+	width: 100%;
+	border-bottom: 2px solid #bfbfbf;
+	margin-top: 30px;
+	padding-bottom: 8px;
+	outline: none;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	color: #939393;
+	font-family: "RalewayRegular", sans-serif;
+}
+
+.malto-form input {
+	letter-spacing: 0.5px;
+}
+
+.malto-form input:focus,
+.malto-form textarea:focus {
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	border-bottom: 2px solid #309df4;
+}
+
+.malto-form input[type=email] {
+	margin-top: 30px;
+}
+
+.malto-form .col-md-12 {
+	text-align: center;
+}
+
+.malto-form button {
+	margin-top: 30px;
+}
+
+/* ------------- MAP ------------- */
+
+#map {
+    width: 100%;
+    height: 300px;
+    background-color: grey;
+}
+
+/* ------------- FOOTER ------------- */
+
+.first-level {
+	background-color: #122138;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.first-level p {
+	font-family: "RalewayBold", sans-serif;
+	color: #d4d4d4;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.second-level {
+	text-align: center;
+	padding: 15px 0px;
+	letter-spacing: 1px;
+	color: #3e4753;
+	font-size: 12px;
+	font-family: "RalewayMedium", sans-serif;
+	background-color: #06152c;
+}
+
+.second-level p {
+	margin: 0;
+}

@@ -1,0 +1,75 @@
+/*
+    This is the additional media CSS file for every page.
+    It's used for styling Header and Menu elements on single pages.
+*/
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+    /* ------------- HEADER(menu + page title) ------------- */
+    .head-elements p {
+        padding: 0px 0px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    /* ------------- HEADER(menu + page title) ------------- */
+    .head-elements h1 {
+        font-size: 30px;
+    }
+
+    .head-elements p {
+        font-size: 10px;
+    }
+
+}
+
+/* Custom */
+@media only screen and (max-width : 700px) {
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    /* ------------- HEADER(menu + page title) ------------- */
+    .head-elements h1 {
+        font-size: 25px;
+        text-transform: none;
+    }
+
+    .head-elements p {
+        font-size: 10px;
+        text-transform: none;
+    }
+
+}
+
+/* Custom, iPhone 6 */
+@media only screen and (max-width : 375px) {
+
+    /* ------------- HEADER(menu + page title) ------------- */
+    .head-elements h1 {
+        font-size: 20px;
+        text-transform: none;
+    }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+}

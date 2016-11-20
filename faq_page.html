@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> [endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> [endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> [endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="zxx"> <!--[endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+    <!-- Title of the browser tab -->
+	<title>FAQ page</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- User Styles -->
+	<script src="libs/jquery/jquery-2.4.4.min.js"></script> <!-- Critical Jquery(JS library) file -->
+	<script src="libs/bootstrap/js/bootstrap.js"></script> <!-- Critical Bootstrap JS file -->
+	<link rel="stylesheet" href="libs/waves/dist/waves.css"> <!-- Material button effect library -->
+	<link rel="stylesheet" href="libs/material-icons/icons.css"> <!-- Google material icons -->
+	<link rel="stylesheet" href="libs/carousel/owl-carousel/owl.carousel.css"> <!-- Owl carousel main file -->
+	<link rel="stylesheet" href="libs/carousel/owl-carousel/owl.theme.css"> <!-- Owl carousel theme file -->
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"> <!-- Font awesome icons -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"> <!-- Bootstrap grid -->
+	<link rel="stylesheet" href="css/_main.css"> <!-- Main Malto CSS file -->
+	<link rel="stylesheet" href="css/_media.css"> <!-- Media(Responsive settings) Malto CSS file -->
+	<link rel="stylesheet" href="css/_fonts.css"> <!-- Fonts Malto CSS file -->
+	<link rel="stylesheet" href="css/page_main.css"> <!-- Common title and menu main styles for pages -->
+	<link rel="stylesheet" href="css/page_media.css"> <!-- Common title and menu media(Responsive settings) styles for pages -->
+	<link rel="stylesheet" href="css/elements_page_main.css"> <!-- Main CSS file for basic Malto elements -->
+	<link rel="stylesheet" href="css/elements_page_media.css"> <!-- Media(Responsive settings) CSS file for basic Malto elements -->
+    <link rel="stylesheet" href="css/faq_page_main.css"> <!-- Main CSS file for faq_page.html -->
+    <link rel="stylesheet" href="css/faq_page_media.css"> <!-- Media(Responsive settings) CSS file for faq_page.html -->
+
+</head>
+
+<body>
+	<!--================ HEADER ================-->
+	<div class="preloader"></div>
+	<header class="malto-head">
+		<div class="head-bar">
+			<div class="container">
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<a href="index.html"><img src="img/Full-logo.png" alt=""></a>
+				</div>
+				<div class="col-md-9 col-sm-9 col-xs-9">
+					<nav class="menu">
+						<i class="material-icons hidden-lg">menu</i>
+						<ul class="hidden visible-lg">
+							<!-- Change links -->
+							<!-- Example: <li class="menu-element"><a href="my-site.com">The best site ever</a></li> -->
+							<li class="menu-element"><a href="index.html">back to landing</a></li>
+							<li class="menu-element menu-accent"><a href="elements_page.html">back to elements</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="empty"></div>
+        <div class="head-elements">
+			<div class="container">
+				<h1>Frequently asked questions</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
+			</div>
+		</div>
+	</header>
+
+
+	<!--================ MOBILE MENU ================-->
+	<nav class="mobile-menu hidden-lg">
+		<ul>
+            <!-- Change links -->
+            <!-- Example: <li class="menu-element"><a href="my-site.com">The best site ever</a></li> -->
+			<li class="menu-element menu-accent"><a href="index.html">back</a></li>
+		</ul>
+	</nav>
+
+    <!--================ FAQ ================ -->
+    <section id="faq-sec">
+        <div class="container">
+            <!-- Tabs -->
+			<div class="row">
+    		<div class="col-md-3" id="myScrollspy">
+      			<ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="300">
+                    <li class="active"><a href="#tag-dashboard">Dashboard</a></li>
+                    <li><a href="#tag-portfolio">Portfolio</a></li>
+                    <li><a href="#tag-refunds">Refunds</a></li>
+                    <li><a href="#tag-earnings">Earnings</a></li>
+                    <li><a href="#tag-downloads">Downloads</a></li>
+                </ul>
+    		</div>
+            <!-- Questions -->
+            <div class="col-md-9">
+                <!-- Dashboard(#tag-dashboard) -->
+                <div class="panel-group" id="tag-dashboard">
+                    <div class="panel-group-title">Dashboard</div>
+                    <!-- First question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-dashboard" href="#collapse1">What does royalty free mean?</a>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">Royalty free means you just need to pay for rights to use the item once per end product. You don't need to pay additional or ongoing fees for each person who sees or uses it.</div>
+                        </div>
+                    </div>
+                    <!-- Second question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-dashboard" href="#collapse2">What do you mean by item and end product?</a>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">The item is what you purchase from Envato Market. The end product is what you build with that item. You can buy a web template, add your text and images, and use it as your website. You can buy an HTML site template, convert it to WordPress, and use it as your website (but not as a stock template for sale).</div>
+                        </div>
+                    </div>
+                    <!-- Third question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-dashboard" href="#collapse3">Is the Regular License the same thing as an editorial license?</a>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">No, our Regular License is for a free end product (whether or not the item is used in the end product in an editorial way). And our Extended License is for an end product that's sold (whether or not the item is used in the end product in an editorial way). If you want to use an item in an editorial way in your end product choose the Regular License if your end product is distributed for free, and choose the Extended License if your end product is sold to the end customer.</div>
+                        </div>
+                    </div>
+					<!-- Fourth question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-dashboard" href="#collapse16">Can I add special requirements to the license terms for my file?</a>
+                        </div>
+                        <div id="collapse16" class="panel-collapse collapse">
+                            <div class="panel-body">If your items are exclusive, you can't sell or redistribute them elsewhere or on other sites. But you can give another Envato Market author permission to use your item in another, larger stock item (of a different scope and nature to your item) that is then sold on Envato Market without breaching your exclusivity.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio(#tag-portfolio) -->
+                <div class="panel-group" id="tag-portfolio">
+                    <div class="panel-group-title">Portfolio</div>
+                    <!-- First question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-portfolio" href="#collapse4">Can I use Envato Market credits to purchase the bundle?</a>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">At this stage it’s not possible to purchase the bundle with Envato Market credit. We are investigating possible solutions to allow payment with Envato credit in future bundles.</div>
+                        </div>
+                    </div>
+                    <!-- Second question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-portfolio" href="#collapse5">What does the Tools and Apps license allow me to do?</a>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">For a tool, such as a font, you are allowed to install the tool on up to 2 computers and use it yourself. You can then create many different end products using the tool. The tool itself is not to be re-distributed. For full details see the Bundles Tools and Apps License.</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Refunds(#tag-refunds) -->
+                <div class="panel-group" id="tag-refunds">
+                    <div class="panel-group-title">Refunds</div>
+                    <!-- First question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-refunds" href="#collapse6">Can I receive feedback on rejections from AudioJungle?</a>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse">
+                            <div class="panel-body">Because AudioJungle is a marketplace platform, and not a critiquing or tutoring service, feedback can generally only be provided for soft rejections, which are items that can be resubmitted after a rejection.</div>
+                        </div>
+                    </div>
+                    <!-- Second question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-refunds" href="#collapse7">Can I submit an edit separately as a new song?</a>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse">
+                            <div class="panel-body">One remix is allowed at this time, which must be significantly different in terms of arrangement, genre or style. Otherwise, edits must be included as variations in the submissions, following the rules for variations.</div>
+                        </div>
+                    </div>
+                    <!-- Third question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-refunds" href="#collapse8">Why can review times vary so much over the year?</a>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse">
+                            <div class="panel-body">Review times may vary for several reasons; periodic changes in the quantity of submissions received. Some months see many less submissions (e.g. over summer holidays), while other months are much busier, which impacts review times.</div>
+                        </div>
+                    </div>
+                </div>
+
+				<!-- Earnings(#tag-earnings) -->
+                <div class="panel-group" id="tag-earnings">
+                    <div class="panel-group-title">Earnings</div>
+                    <!-- First question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-earnings" href="#collapse9">Can I use the logo or branding that's in a website template?</a>
+                        </div>
+                        <div id="collapse9" class="panel-collapse collapse">
+                            <div class="panel-body">No. You cannot use the logo or other trademark elements in a website template, as these are retained by the author and are included for demonstration purposes only.</div>
+                        </div>
+                    </div>
+                    <!-- Second question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-earnings" href="#collapse10">Do I need to include the author or site in the credits?</a>
+                        </div>
+                        <div id="collapse10" class="panel-collapse collapse">
+                            <div class="panel-body">No, it's not mandatory to give the author credit. But we do suggest that if your end product has credits as part of its design, please credit the author. Also, as the author retains ownership of the item, you shouldn't claim copyright in the item.</div>
+                        </div>
+                    </div>
+                    <!-- Third question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-earnings" href="#collapse11">What do the Music Licenses mean by "most web uses"</a>
+                        </div>
+                        <div id="collapse11" class="panel-collapse collapse">
+                            <div class="panel-body">Most web uses includes general online and streaming-only purposes, such as using the item in an end product uploaded to YouTube/Vimeo, displayed on your website, as part of a browser-based game, etc.</div>
+                        </div>
+                    </div>
+                </div>
+
+				<!-- Downloads(#tag-downloads) -->
+                <div class="panel-group" id="tag-downloads">
+                    <div class="panel-group-title">Downloads</div>
+                    <!-- First question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-downloads" href="#collapse12">How do I know my Broadcast audience size?</a>
+                        </div>
+                        <div id="collapse12" class="panel-collapse collapse">
+                            <div class="panel-body">As a general rule of thumb, an audience size up to 1 million tends to be more for local and hyper-targeted broadcasts, 1-10 million is more on the regional-to-national scale, and above 10 million is typical for national and international broadcasts. Please note this may vary depending on your location and target market. In some places, this audience size measure is similar to the broadcast DMA.</div>
+                        </div>
+                    </div>
+                    <!-- Second question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-downloads" href="#collapse13">I have customized a logo for a client, can they trademark?</a>
+                        </div>
+                        <div id="collapse13" class="panel-collapse collapse">
+                            <div class="panel-body">No. The specific nature of non-exclusive stock Logo Licenses does not allow anyone to claim an exclusive right to use the logo template or final logo. This includes not applying to trademark their final logo.</div>
+                        </div>
+                    </div>
+                    <!-- Third question -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#tag-downloads" href="#collapse14">What do the Music Licenses mean by "most web uses"</a>
+                        </div>
+                        <div id="collapse14" class="panel-collapse collapse">
+                            <div class="panel-body">Most web uses includes general online and streaming-only purposes, such as using the item in an end product uploaded to YouTube/Vimeo, displayed on your website, as part of a browser-based game, etc.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+    </section>
+
+	<!-- Paste your code istead of <br> tags -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+	<!--================ FOOTER ================-->
+	<footer class="malto-foot">
+		<div class="first-level dark-social-links">
+			<p>Malto template</p>
+			<a href=""><i class="fa fa-facebook"></i></a>
+			<a href=""><i class="fa fa-twitter"></i></a>
+			<a href=""><i class="fa fa-google-plus"></i></a>
+		</div>
+		<div class="second-level">
+			<p>Copyright 2016 All rights reserved</p>
+		</div>
+	</footer>
+	<div class="hidden"></div>
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	[endif]-->
+
+	<!-- Load Scripts(Scrollax.js) -->
+	<script>var scr = {"scripts":[
+		{"src" : "libs/waypoints/waypoints.min.js", "async" : false},
+		{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
+		{"src" : "libs/waves/dist/waves.min.js", "async" : false},
+		{"src" : "libs/carousel/owl-carousel/owl.carousel.js", "async" : false},
+		{"src" : "libs/page-scroll/jquery.malihu.PageScroll2id.js", "async" : false},
+		{"src" : "libs/classie-master/classie.js", "async" : false},
+		{"src" : "js/common.js", "async" : false},
+		]};
+		!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+
+</body>
+
+</html>

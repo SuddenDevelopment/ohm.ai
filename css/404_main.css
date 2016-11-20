@@ -1,0 +1,46 @@
+/* ------------- 404 PAGE ------------- */
+
+body {
+    margin: 0;
+}
+
+#error-404 {
+    background: url("../img/404-bg.png") center;
+    text-align: center;
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.error-code {
+    font-family: "RalewayBold";
+    font-size: 300px;
+    color: white;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.error-content {
+    margin-top: 21vh;
+}
+
+.error-descr {
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    font-family: "RalewayMedium";
+    margin: 0px;
+}
+
+#error-404 .waves-effect .waves-ripple {
+	background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.3) 90%) !important;
+    background: -o-radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.3) 90%) !important;
+    background: -moz-radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.3) 90%) !important;
+    background: radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.3) 90%) !important;
+}
+
+.malto-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 35px;
+}

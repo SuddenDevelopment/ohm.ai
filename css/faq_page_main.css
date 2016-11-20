@@ -1,0 +1,109 @@
+/*
+    This is the main CSS file for faq_page.html.
+    It's used for styling FAQ page exluding Header and Menu.
+*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+* body
+	+ Header / .malto-head
+		- Menu / .menu
+		- Title / .head-elements
+	+ Sidebar
+    + Questions
+	+ Footer / .malto-foot
+		- First level / .first-level
+		- Second level / .second-level
+-------------------------------------------------------------------*/
+
+/* ------------- FAQ ------------- */
+
+#faq-sec {
+    position: relative;
+}
+
+/* Sidebar */
+.nav {
+    margin: 0px;
+}
+
+.nav-pills {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 3px;
+}
+
+.affix {
+    top: 105px;
+}
+
+.nav-pills>li {
+    text-align: left;
+    margin: 0;
+    border-radius: 0;
+}
+
+.nav-stacked>li+li {
+    margin: 0;
+}
+
+.nav-pills>li>a,
+.nav-pills>li>a:focus {
+    color: #686868;
+    font-family: "RalewaySemiBold";
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #f9f9f9;
+    border-left: 4px solid #f9f9f9;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    border-radius: 0;
+
+}
+.nav-pills>li>a:hover {
+    background-color: #f9f9f9;
+    border-left-color: #dcdcdc;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus {
+    border-left-color: #309df4;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    background-color: #f9f9f9;
+    color: #686868;
+}
+
+.nav-pills>li.active>a:hover {
+    border-left-color: #309df4;
+    background-color: #f9f9f9;
+    color: #686868;
+}
+
+.panel-body {
+    padding: 15px 22px;
+}
+
+#first-faq-tab {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+#last-faq-tab {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+/* Questions(Accordion) */
+.panel-group-title {
+    font-size: 17px;
+    font-family: "RalewaySemiBold";
+    color: #4d4d4d;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
