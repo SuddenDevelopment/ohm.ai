@@ -60,8 +60,9 @@
 		<div class="empty"></div>
 		<div class="head-elements">
 			<div class="container">
-				<h1 class="txt-shade">Watch and analyze your data live</h1>
-				<h2 class="txt-shade">interactively create data monitoring dashboards for things that can't wait for the next batch process.</h2>
+				<div class="txt-shade hugeTxt">Ohm.ai</div>
+				<h1/>See what you've been missing.</h1>
+				<h2 class="txt-shade">interactively create data monitoring dashboards for things that can't wait for the next batch process or development cycle.</h2>
 				<div class="malto-btn"><a href="#features">Learn more</a></div>
 				<div class="malto-btn accent"><a href="http://ohm.ai/demo">Demo</a></div>
 			</div>
@@ -83,28 +84,55 @@
 		<div class="container">
 			<div class="col-md-3 col-sm-6 col-xs-12">
 				<i class="material-icons">rss_feed</i>
-				<h3>Streaming Data Analysis</h3>
-				<p class="item-descr">Interact with streaming data to discover something significant that might be lost in a dashboard too far abstracted fromt he context of the raw data.</p>
+				<h3>Tap</h3>
+				<p class="item-descr">
+					<ul>
+						<li>Tap into live data streams</li>
+						<li>Turn APIs into streams</li>
+						<li>Stream database logs</li>
+						<li>Stream logs</li>
+					</ul>
+				</p>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12">
-				<i class="material-icons">terrain</i>
-				<h3>Schema Discovery</h3>
-				<p class="item-descr">Every data schema including common data types and samples is automatically discovered, can be manipulated and exported.</p>
+				<i class="material-icons">format_shapes</i>
+				<h3>Shape</h3>
+				<p class="item-descr">
+					<ul>
+						<li>Filter records</li>
+						<li>Categorize records</li>
+						<li>Augment records</li>
+						<li>Prune fields</li>
+						<li>Parse fields</li>
+					</ul>
+				</p>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12">
-				<i class="material-icons">multiline_chart</i>
-				<h3>Streaming Stats</h3>
-				<p class="item-descr">Statistics can be created and shown from any data in the stream interactively</p>
+				<i class="material-icons">insert_chart</i>
+				<h3>Visualize</h3>
+				<p class="item-descr">
+					<ul>
+						<li>Create streaming statistics</li>
+						<li>Show the workflow</li>
+						<li>Visualize with context</li>
+					</ul>
+				</p>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12">
-				<i class="material-icons">assignment</i>
-				<h3>Workflow</h3>
-				<p class="item-descr">Tag, Filter, Highlight, move records to a queue, run an API query on them return the results, take notes, set categories and export the results of all of the above at any time. Change the conditions and actions without programming.</p>
+				<i class="material-icons">share</i>
+				<h3>Collaborate</h3>
+				<p class="item-descr">
+					<ul>
+						<li>Share shaped data streams</li>
+						<li>Add analysis and share</li>
+						<li>Send alerts and snapshots</li>
+						<li>Slack integration</li>
+					</ul>
+				</p>
 			</div>
 		</div>
 	</section>
-
-	<!--================ SERVICES ================-->
+	<!--================ USE CASES ================-->
 	<section id="uses">
 		<h4>Use Cases</h4>
 		<div class="container">
@@ -112,83 +140,134 @@
 			<div class="tabs">
 				<ul class="nav nav-tabs" role="tablist" data-tabs="tabs">
 					<!-- Change tab titltes -->
-					<li class="active"><a class="first-tab" href="#offers" data-toggle="tab">Analysis</a></li>
-					<li><a href="#mobile" data-toggle="tab">Alerts</a></li>
-					<li><a class="last-tab" href="#development" data-toggle="tab">Awareness</a></li>
+					<li class="active"><a class="first-tab" href="#Operations" data-toggle="tab">Operations</a></li>
+					<li><a href="#Security" data-toggle="tab">Security</a></li>
+					<li><a class="first-tab" href="#Research" data-toggle="tab">Research</a></li>
+					<li><a class="" href="#IOT" data-toggle="tab">IOT</a></li>
+					<li><a class="last-tab" href="#Development" data-toggle="tab">Development</a></li>
 				</ul>
 			</div>
 			<!-- TABS CONTENT -->
 			<div class="tab-content">
-				<div role="tabpanel" class="tab-pane fade in active" id="offers">
+				<div role="tabpanel" class="tab-pane fade in active" id="Operations">
+					<div class="col-md-5 col-md-offset-1 col-sm-6">
+						<div class="tab-title">
+							<span>Work with logs in realtime</span>
+							<hr class="tab-divider">
+						</div>
+						<div class="tab-descr">
+							<p>DevOps | DBAs | SysAdmins</p>
+							<ul class="tab-features">
+								<li>Work with streaming logs</li>
+								<li>Work with streaming events</li>
+								<li>Filter streams to what's significant</li>
+								<li>Create an automated or operator assisted workflow</li>
+							</ul>
+							<div class="malto-btn accent"><a href="http://ohm.ai/demo">Demo</a></div>
+						</div>
+					</div>
+					<div class="col-md-6 hidden-xs">
+						<div class="tab-img">
+							<img src="img/operations.jpg">
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="Security">
+					<div class="col-md-6 hidden-xs">
+						<div class="tab-img">
+							<img src="img/security.jpg">
+						</div>
+					</div>
 					<div class="col-md-5 col-md-offset-1 col-sm-6">
 						<div class="tab-title">
 							<span>Be a more effective analyst</span>
 							<hr class="tab-divider">
 						</div>
 						<div class="tab-descr">
-							<p>Be self sufficient in exploring the data to find patterns, outliers and defining signficiant rules. Change them at will to find new things without any development required.</p>
+							<p>SOC WatchStanders | Analysts | Researchers</p>
 							<ul class="tab-features">
-								<li>Manipulate the live data in your own sandbox</li>
-								<li>Adjust it as often as you like to fit the needs of the moment</li>
-								<li>Create and watch an automated workflow</li>
-								<li>Save and share the results</li>
+								<li>Stream events</li>
+								<li>Stream a polling API</li>
+								<li>Define which records get passed to lookup APIs</li>
+								<li>Categprize, and add analysis</li>
+								<li>Store, Export to CSV, or share in realtime</li>
 							</ul>
 							<div class="malto-btn accent"><a href="http://ohm.ai/demo">Demo</a></div>
 						</div>
 					</div>
-					<!-- side image
-					<div class="col-md-6 hidden-xs">
-						<div class="iphone-img">
-							<img src="http://placehold.it/278x560" alt="First iphone picture">
-						</div>
-					</div>
-					-->
 				</div>
-				<div role="tabpanel" class="tab-pane fade" id="mobile">
+				<div role="tabpanel" class="tab-pane fade" id="Research">
 					<div class="col-md-5 col-md-offset-1 col-sm-6">
 						<div class="tab-title">
-							<span>Set your own custom alerts</span>
+							<span>Discover the questions to ask</span>
 							<hr class="tab-divider">
 						</div>
 						<div class="tab-descr">
-							<p>Define conditions to be alerted on individual records. Some things can't wait for the next batch processing of data. Get results from the data without the need to constantly poll a database or write a new program.</p>
+							<p>Data Miners | Data Journalists | Data Scientists</p>
 							<ul class="tab-features">
-								<li>Custom live alerts</li>
-								<li>Save performance on production systems</li>
-								<li>Automate workflows for alerted records</li>
-								<li>Change the settigs at any time without impacting others</li>
+								<li>Identify the patterns</li>
+								<li>Recognize divergence from patterns</li>
+								<li>Create and compare statistics</li>
+								<li>Collaborate</li>
 							</ul>
 							<div class="malto-btn accent"><a href="http://ohm.ai/demo">Demo</a></div>
 						</div>
 					</div>
-					<!-- side image
+					<!-- side image -->
 					<div class="col-md-6 hidden-xs">
-						<div class="iphone-img">
-							<img src="http://placehold.it/278x560" alt="Second iphone picture">
+						<div class="tab-img">
+							<img src="img/research.jpg">
 						</div>
 					</div>
-					-->
+					
 				</div>
-				<div role="tabpanel" class="tab-pane fade" id="development">
+				<div role="tabpanel" class="tab-pane fade" id="IOT">
+					<div class="col-md-6 hidden-xs">
+						<div class="tab-img">
+							<img src="img/iot.jpg">
+						</div>
+					</div>
+					<div class="col-md-5 col-md-offset-1 col-sm-6">
+						<div class="tab-title">
+							<span>Watch your Sensor data take shape</span>
+							<hr class="tab-divider">
+						</div>
+						<div class="tab-descr">
+							<p>Developers | Ecosystem Managers</p>
+							<ul class="tab-features">
+								<li>Stream multiple feeds into the same interface</li>
+								<li>Show the latest values</li>
+								<li>Show stats</li>
+								<li>Discover data hidden by typical dashboards</li>
+							</ul>
+							<div class="malto-btn accent"><a href="http://ohm.ai/demo">Demo</a></div>
+						</div>
+					</div>
+
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="Development">
 					<div class="col-md-5 col-md-offset-1 col-sm-6">
 						<div class="tab-title">
 							<span>Understand the raw data</span>
 							<hr class="tab-divider">
 						</div>
 						<div class="tab-descr">
-							<p>See the data before it's been filtered, formatted and presented. Get an understanding of what's available, what's new and changes before setting your own filters and data manipulations.</p>
+							<p>Developers | Architects | QA</p>
 							<ul class="tab-features">
+								<li>Discover Schema</li>
+								<li>Filter noise</li>
+								<li>Parse and Transform Records</li>
+								<li>Export Schema, Cache and Configurations</li>
+								<li>Apply configurations to on demand and backend data tools.</li>
 							</ul>
 							<div class="malto-btn accent"><a href="http://ohm.ai/demo">Demo</a></div>
 						</div>
 					</div>
-					<!-- side image
 					<div class="col-md-6 hidden-xs">
-						<div class="iphone-img">
-							<img src="http://placehold.it/278x560" alt="Third iphone picture">
+						<div class="tab-img">
+							<img src="img/development.jpg">
 						</div>
 					</div>
-					-->
 				</div>
 			</div>
 		</div>
@@ -267,7 +346,7 @@
 					<span class="icon-wrap">
 						<i class="material-icons">email</i>
 					</span>
-					<span>ImInterested theAtSymbol Ohm.ai</span>
+					<span>ImInterested@Ohm.ai</span>
 				</div>
 			</div>
 			<!--
